@@ -1,15 +1,19 @@
 # TCP Ping Server
 
 ### GET
-`mkdir -p ~/go/src/github.com/skillcoder`
-`cd ~/go/src/github.com/skillcoder`
-`git clone https://github.com/skillcoder/tcp-ping-server.git`
+```
+mkdir -p ~/go/src/github.com/skillcoder
+cd ~/go/src/github.com/skillcoder
+git clone https://github.com/skillcoder/tcp-ping-server.git
+```
 
 ### BUILD
-`yum install glide`
-`cd ~/go/src/github.com/skillcoder/tcp-ping-server`
-`glide update`
-`go build`
+```
+sudo yum install glide
+cd ~/go/src/github.com/skillcoder/tcp-ping-server
+glide update
+go build
+```
 
 ### RUN
 ```
