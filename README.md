@@ -8,6 +8,7 @@ git clone https://github.com/skillcoder/tcp-ping-server.git
 ```
 
 ### BUILD
+#### Amaxon Linux 2 (AWS)
 ```
 sudo yum install glide
 cd ~/go/src/github.com/skillcoder/tcp-ping-server
