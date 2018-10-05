@@ -21,3 +21,7 @@ go build
 setenv TCPPINGSERVER_SERVICE_LISTEN 127.0.0.1:8888
 ./tcp-ping-server
 ```
+
+### Install
+See in [INSTALL.md](INSTALL.md)
+

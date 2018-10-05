@@ -56,9 +56,9 @@ func init() {
 }
 
 func main() {
-  tcp_listen := os.Getenv("TCPPINGSERVER_SERVICE_LISTEN")
+  tcp_listen := os.Getenv("TCPING_SERVICE_LISTEN")
   if len(tcp_listen) == 0 {
-    log.Fatal("Required env parameter TCPPINGSERVER_SERVICE_LISTEN [ip:port] is not set")
+    log.Fatal("Required env parameter TCPING_SERVICE_LISTEN [ip:port] is not set")
   }
 
   l, err := net.Listen("tcp4", tcp_listen)

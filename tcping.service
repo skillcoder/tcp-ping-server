@@ -1,0 +1,41 @@
+# This file is part of package TCP Ping Daemon
+#
+# Copyright (c) 2018
+# 
+# Author: skillcoder
+# Description:
+#    Used to start the tcping service (tcping)
+#    will be installed as /usr/lib/systemd/system/tcping.service
+#    enable : systemctl enable tcping.service
+#	 start : systemctl start tcping.service
+#
+# TCP Ping Server service
+#
+[Unit]
+Description=TCP Ping Server service
+#Documentation=man:tcping(8)
+Requires=nss-lookup.target network.target time-sync.target
+After=nss-lookup.target network.target time-sync.target
+Wants=syslog.target
+# Before=
+# Conflicts=
+
+[Service]
+Type=simple
+User=tcping
+Group=tcping
+Environment=TCPING_SERVICE_LISTEN=:8888
+#WorkingDirectory=/var/lib/tcping
+#PIDFile=/var/lib/tcping/.8888.pid
+OOMScoreAdjust=-100
+StandardOutput=syslog
+ExecStart=/usr/local/bin/tcping
+SuccessExitStatus=0 15
+#Restart=on-failure
+Restart=always
+TimeoutSec=5
+# IOSchedulingClass=idle
+
+[Install]
+Alias=tcpingd.service
+WantedBy=multi-user.target
