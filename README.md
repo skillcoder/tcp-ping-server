@@ -18,7 +18,7 @@ go build
 
 ### RUN
 ```
-setenv TCPPINGSERVER_SERVICE_LISTEN 127.0.0.1:8888
+setenv TCPING_SERVICE_LISTEN 127.0.0.1:8888
 ./tcp-ping-server
 ```
 
