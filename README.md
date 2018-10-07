@@ -22,6 +22,6 @@ setenv TCPING_SERVICE_LISTEN 127.0.0.1:8888
 ./tcp-ping-server
 ```
 
-### Install
+### Install as daemon
 See in [INSTALL.md](INSTALL.md)
 
