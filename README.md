@@ -5,21 +5,17 @@
 mkdir -p ~/go/src/github.com/skillcoder
 cd ~/go/src/github.com/skillcoder
 git clone https://github.com/skillcoder/tcp-ping-server.git
+cd tcp-ping-server
 ```
 
 ### BUILD
-#### Amazon Linux 2 (AWS)
 ```
-sudo yum install glide
-cd ~/go/src/github.com/skillcoder/tcp-ping-server
-glide update
 go build
 ```
 
 ### RUN
 ```
-setenv TCPING_SERVICE_LISTEN 127.0.0.1:8888
-./tcp-ping-server
+TCPING_SERVICE_LISTEN=127.0.0.1:8888 ./tcp-ping-server
 ```
 
 ### Install as daemon

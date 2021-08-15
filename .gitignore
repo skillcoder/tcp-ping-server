@@ -12,8 +12,6 @@
 *.out
 /tcp-ping-server
 
-/glide.lock
-/vendor
 /.local.*
 /config.yml
 

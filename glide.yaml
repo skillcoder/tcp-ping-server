@@ -1,8 +1,0 @@
-package: .
-import:
-- package: github.com/sirupsen/logrus
-  version: ~1.0.6
-- package: github.com/skillcoder/homer
-  version: ~0.0.2
-  subpackages:
-  - shutdown
